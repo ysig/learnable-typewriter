@@ -1,0 +1,36 @@
+num_epochs: 400
+batch_size: 32
+adaptive_dataloader: False
+n_workers: 16
+
+optimizer:
+  name: adamw
+  lr: 1.0e-4
+  weight_decay: 0
+  encoder:
+    weight_decay: 1.0e-6
+
+log:
+  milestone: 1
+  save:
+    every: 1
+    best: True
+  train:
+    reconstruction:
+      every: 1
+    images:
+      every: 1
+      how_many: 20
+  val:
+    reconstruction:
+      every: 1
+    error_rate:
+      every: 1
+      last: True
+      kargs:
+        dataloader_batch_size: 4
+
+device: 0
+seed: 97312
+flush_mem: True
+flush_per: 1

@@ -1,0 +1,64 @@
+encoder:
+  H: 64
+  C: 3
+  name: resnet32
+  pooling_on_width: 4
+
+background:
+  size: 
+    - ${eval:${model.encoder.H}//2}
+    - ${model.encoder.H}
+
+  use_clamp: soft
+  init:
+    freeze: True
+    constant: 0.7
+
+sprites:
+  n: 80
+  color_channels: ${model.encoder.C}
+  size:
+    - ${eval:${model.encoder.H}//2}
+    - ${eval:${model.encoder.H}//2}
+
+  use_clamp: soft
+  gen_type: mlp
+  init:
+    color:
+      freeze: True 
+      constant: 0.5
+
+transformation:
+  canvas_size:
+    - ${model.encoder.H}
+    - ${eval:${model.encoder.H}*2}
+
+  layer:
+    ops: ['color', 'position']
+    
+    color:
+      color_channels: ${model.encoder.C}
+      n_hidden_layers: 2
+      n_hidden_units: 128
+    
+    position:
+      n_hidden_layers: 2
+      n_hidden_units: 128
+      max_x: 1.0
+      max_y: 1.0
+      parametrization: exp
+      padding_mode: zeros
+
+  background:
+    ops: ['color'] 
+    color:
+      color_channels: ${model.encoder.C}
+      n_hidden_layers: 2
+      n_hidden_units: 128
+
+window:
+  size: ${model.encoder.H}
+
+loss:
+  sigma_gaussian: 7
+  ctc_factor: 0.01

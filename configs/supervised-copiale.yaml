@@ -1,0 +1,30 @@
+defaults:
+  - training: defaults
+  - model: defaults
+  - dataset: copiale
+  - _self_
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+  verbose: False
+
+tag: supervised
+
+dataset:
+  copiale:
+    supervised: True
+
+model:
+  encoder:
+    H: 96
+
+  background:
+    init:
+      constant: [0.9529411764705882,0.9019607843137255,0.7529411764705882]
+
+training:
+  n_workers: 8
+  batch_size: 16
+  num_epochs: 500

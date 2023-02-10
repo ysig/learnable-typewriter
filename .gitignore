@@ -1,0 +1,7 @@
+/datasets/
+/runs/
+/.vscode/
+*-checkpoint.ipynb
+*.pyc
+trainer.log
+.ipynb_checkpoints

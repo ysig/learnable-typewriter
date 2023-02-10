@@ -1,0 +1,2 @@
+runs/** filter=lfs diff=lfs merge=lfs -text
+datasets/** filter=lfs diff=lfs merge=lfs -text
