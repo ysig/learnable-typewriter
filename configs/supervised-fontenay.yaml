@@ -1,0 +1,27 @@
+defaults:
+  - training: defaults
+  - model: defaults
+  - dataset: fontenay
+  - _self_
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+  verbose: False
+
+tag: supervised
+
+dataset:
+  fontenay:
+    supervised: True
+
+model:
+  background:
+    init:
+      constant: [0.5882352941176471,0.5686274509803922,0.4666666666666667]
+
+training:
+  n_workers: 2
+  batch_size: 2
+  num_epochs: 200

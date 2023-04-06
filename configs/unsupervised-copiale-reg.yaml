@@ -1,0 +1,45 @@
+defaults:
+  - training: defaults
+  - model: defaults
+  - dataset: copiale
+  - _self_
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+  verbose: False
+
+tag: unsupervised
+
+dataset:
+  copiale:
+    supervised: False
+    crop_width: ${eval:${model.encoder.H}*2}
+
+model:
+  encoder:
+    H: 96
+
+  background:
+    init:
+      constant: [0.9529411764705882,0.9019607843137255,0.7529411764705882]
+
+  loss:
+    sparse: 0.05
+    frequency: 0.1
+    overlap: 0.00001
+
+  sprites:
+    n: 120
+    gen_type: unet
+
+training:
+  num_epochs: 5000
+  log:
+    milestone: 20
+    val:
+      error_rate:
+        every: 0
+        last: True
+        eval_best: False
