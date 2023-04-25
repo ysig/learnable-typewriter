@@ -1,7 +1,7 @@
 ![teaser.png](./.media/teaser.png)
 
 # The Learnable Typewriter <br><sub>A Generative Approach to Text Line Analysis</sub>
-Official PyTorch implementation of [The Learnable Typewriter: A Generative Approach to Text Line Analysis](https://imagine.enpc.fr/~siglidii/learnable-typewriter/).  
+Official PyTorch implementation of [The Learnable Typewriter: A Generative Approach to Text Αnalysis](https://imagine.enpc.fr/~siglidii/learnable-typewriter/).  
 Authors: [Yannis Siglidis](https://imagine.enpc.fr/~siglidii/), [Nicolas Gonthier](https://perso.telecom-paristech.fr/gonthier/), [Julien Gaubil](https://juliengaubil.github.io/), [Tom Monnier](https://www.tmonnier.com/), [Mathieu Aubry](http://imagine.enpc.fr/~aubrym/).  
 Research Institute: [Imagine](https://imagine.enpc.fr/), _LIGM, Ecole des Ponts, Univ Gustave Eiffel, CNRS, Marne-la-Vallée, France_
 
