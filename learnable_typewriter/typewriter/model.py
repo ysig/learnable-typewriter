@@ -106,7 +106,7 @@ class LearnableTypewriter(nn.Module):
     def transform_background(self, backgrounds, color, size, device):
         beta = self.beta_bkg.expand(size[0], -1, -1)
         grid = F.affine_grid(beta, size, align_corners=False)
-        out = F.grid_sample(color, grid, mode='bilinear', padding_mode='border', align_corners=False)[0]
+        out = F.grid_sample(color, grid, mode='bilinear', padding_mode='border', align_corners=False)
         return out
 
     def transform_sprites_p(self, sprites_p, params_layers_p):
