@@ -16,7 +16,7 @@ python -m pip install -r requirements.txt
 Download & extract [datasets.zip](https://www.dropbox.com/s/0fa9hcbfu9vr3t2/datasets.zip?dl=0) and [runs.zip](https://www.dropbox.com/s/c4c7lbp1ydqs9dj/runs.zip?dl=0) in the parent folder.
 
 ## Inference :peach:
-For minimal inference and plotting we provide a [standalone notebook. ![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XAMUPkpTzkKCd5ZH5jn8dy4_ukSX8slJ?usp=sharing)
+For minimal inference and plotting we provide a [standalone notebook. ![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yDL_HGncDiMzShA7c-OZYOgYrb1_qqGf)
 
 To reproduce the figures of the paper run the `scripts/figures.ipynb` notebook.
 
