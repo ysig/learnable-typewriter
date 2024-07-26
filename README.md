@@ -4,6 +4,7 @@
 Official PyTorch implementation of [The Learnable Typewriter: A Generative Approach to Text Αnalysis](https://imagine.enpc.fr/~siglidii/learnable-typewriter/).  
 Authors: [Yannis Siglidis](https://imagine.enpc.fr/~siglidii/), [Nicolas Gonthier](https://perso.telecom-paristech.fr/gonthier/), [Julien Gaubil](https://juliengaubil.github.io/), [Tom Monnier](https://www.tmonnier.com/), [Mathieu Aubry](http://imagine.enpc.fr/~aubrym/).  
 Research Institute: [Imagine](https://imagine.enpc.fr/), _LIGM, Ecole des Ponts, Univ Gustave Eiffel, CNRS, Marne-la-Vallée, France_
+To appear in [ICDAR 2024](https://icdar2024.net/).
 
 ## Install :seedling:
 ```shell
@@ -125,6 +126,7 @@ _If you want to dive in deeper, check out our [experimental features](https://gi
 ## Also check out :rainbow:
 If you like this project, have also a look to related work produced by our team:
 
+- [Efstathiou et al. - An Interpretable Deep Learning Approach for Morphological Script Type Analysis (ICWP 2024)](https://learnable-typewriter-pal.github.io/)
 - [Monnier et al. - Share With Thy Neighbors: Single-View Reconstruction by Cross-Instance Consistency (ECCV 2022)](https://www.tmonnier.com/UNICORN/)
 - [Loiseau et al. - Representing Shape Collections with Alignment-Aware Linear Models (3DV 2021)](https://romainloiseau.github.io/deep-linear-shapes/)
 - [Monnier et al. - Unsupervised Layered Image Decomposition into Object Prototypes (ICCV 2021)](https://arxiv.org/abs/2006.11132)
